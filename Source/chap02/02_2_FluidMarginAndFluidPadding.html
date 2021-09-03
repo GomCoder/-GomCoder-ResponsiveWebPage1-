@@ -1,48 +1,64 @@
 <!DOCTYPE HTML>
 <html lang="ko">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-<title>Document</title>
 
-<!-- Margin(마진): 어떤 물체와 물체 사이의 빈 공간
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+
+    <!-- Margin(마진): 어떤 물체와 물체 사이의 빈 공간
               여백 또는 간격
 Padding(패딩): 면과 면 사이가 물체나 공간 등으로 채워져 있는 것(속, 충전재)
 웹사이트에서 특정 요소에 두께를 만들거나 빈 공간 또는 간격을 만들 때 사용 -->
 
 
-<style>
-*{margin:0; padding:0;}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-#wrap{
-width:90%;
-/* 960px */
-height:500px;
-margin:0 auto;
-border:4px solid #000;
-}
+        #wrap {
+            width: 90%;
+            /* 960px */
+            height: 500px;
+            margin: 0 auto;
+            border: 4px solid #000;
+            background: #f7e041;
+        }
 
-#wrap div{
-width:31.25%;
-/* 300px ÷ 960px */
-height:100%;
-display:inline-block;
-}
+        #wrap p{
+            padding:40px 4.16666666666667%
+        }
 
-#wrap div:first-child{
-margin-right:37.5%;
-/* 360px ÷ 960px */
-background:#1f518b;
-}
+       /* #wrap div {
+            width: 31.25%;
+           
+            height: 100%;
+            display: inline-block;
+        }
 
-#wrap div:first-child + div{
-background:#f7e041;
-}
-</style>
+        #wrap div:first-child {
+            margin-right: 37.5%;
+       
+            background: #1f518b;
+        }
+
+        #wrap div:first-child+div {
+            background: #f7e041;
+        }*/
+    </style>
 </head>
+
 <body>
-	<div id="wrap">
-		<div></div><div></div>
-	</div>
+    <div id="wrap">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis dapibus leo, eu sollicitudin diam. Donec suscipit quam ut iaculis blandit. Ut facilisis fringilla augue, id lacinia purus gravida sed. Praesent viverra, nisl id scelerisque aliquam, mi sapien scelerisque sapien, imperdiet laoreet erat lorem non sapien. Donec id metus tincidunt magna commodo dapibus et in sem. Cras blandit fringilla euismod. Aenean eget convallis tellus. Vestibulum aliquam sem a rhoncus blandit. Aenean nec sollicitudin est. In ultrices vulputate tincidunt. Aenean non lectus in tellus venenatis auctor eget a risus. Ut eget lorem sapien. Suspendisse quis magna ac arcu semper volutpat vel a ante. Phasellus eget pharetra nibh. Nam placerat porta turpis, in iaculis leo bibendum efficitur.
+
+Aliquam erat volutpat. Ut placerat rutrum neque, at imperdiet nunc. Maecenas quis libero condimentum, accumsan lacus et, tincidunt augue. In mauris mauris, faucibus et volutpat eget, pellentesque blandit quam. Nunc malesuada dolor nec quam consectetur, vel ultricies arcu consequat. Proin cursus ante eu ex euismod gravida. 
+        </p>
+    </div>
 </body>
+
 </html>
