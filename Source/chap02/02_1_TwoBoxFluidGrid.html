@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap{
+            width: 90%;
+            height: 500px;
+            margin: 0 auto;
+            border: 4px solid #000;
+        }
+
+        .container{
+            width:93.75%;
+            height: 492px;
+            margin: 0 auto;
+            border: 4px solid #000;
+        }
+
+        .container div{
+            display: inline-block;
+            height: 100%;
+        }
+
+        .container div:first-child{
+            width:33.33333333333333333%;
+            background:#d75d5d;
+        }
+
+        .container div:first-child + div{
+            width: 66.6666666666666667%;
+            background: #2dcc70;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap"> 
+        <!-- div 태그틑 요소를 묶기 위해 사용, 전체를 감싸는 div 태그를 만드는 이유는 
+            각 요소들의 너비를 %로 바꿀 때 기준이 되는 너비가 필요하기 때문
+            wrap(wrapper): 모든 태그를 감싸고 있는 박스를 만듦 
+            - 웹 문서 내용 전체의 크기나 배경색 등을 한꺼번에 조절할 수 있음
+            - 브라우저의 크기에 상관없이 웹 문서의 내용을 중앙에 배치할 수 있음
+            - 반응형 웹에서는 자식 박스들이 가변 크기로 설정되었을 때 무제한으로 늘어나는 것을 방지
+            - 자식 박스들을 가변 크기로 만들 때 기준 크기로 사용할 수 있음 -->
+        <div class="container">
+            <div></div><div></div>
+        </div>
+    </div>
+</body>
+
+</html>
